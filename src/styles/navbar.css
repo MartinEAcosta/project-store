@@ -1,0 +1,75 @@
+
+@import url(const.css);
+
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background-color: var(--navbarColor);
+}
+
+.navbar-header{
+    padding: 30px 110px 30px 110px;
+}
+
+.navbar-header nav, .flex-end{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    align-items: center;
+}
+
+.navbar-header .flex-end{
+    justify-content: end;
+}
+
+.navbar-header .btn-nav{
+    position: relative;
+    font-family: var(--fontNav);
+    font-size: 21px;
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-header nav .btn-nav:hover::before{
+    width: 100%;
+}
+
+.navbar-header nav .btn-nav:hover{
+    color: var(--secondaryLight-1);
+}
+
+.navbar-header nav .btn-nav:before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    height: 3px;
+    width: 0;
+    background: var(--primaryColor);
+    border-radius: 50px;
+    transition: width 0.2s linear;
+}
+
+header .navbar-header nav figure{
+    margin: 0px;
+}
+
+figure .logo{
+    width: auto;
+    margin: auto;
+    height: 6vh;
+    cursor: pointer;
+}
+
+.userIconSVG{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url(../assets/userIcon.svg);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}

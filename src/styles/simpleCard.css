@@ -1,0 +1,72 @@
+@import url(const.css);
+
+article .boxCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffBF;
+    width: 310px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 30px;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+article .boxCard:hover{
+    scale: 1.01;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+figure .productImage{
+    display: flex;
+    max-height: 190px;
+    margin: auto;
+}
+
+
+article .productName{
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+article .description{
+    margin-left: 30px;
+    font-family: var(--fontProducts);
+}
+
+article .description p,.contReviews{
+    color: var(--unavailableColor);
+}
+
+article .description .boxSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article .description .boxSection div{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+article .description .boxSection div .starIcon{
+    margin-left: 4px;
+    
+}
+
+article .description .boxSection .calification{
+    font-size: 20px;
+    color: var(--unavailableColor)
+}
+
+article .description span{
+    font-weight: bold;
+}
+
+article .description .price{
+    font-size: 35px;
+    color: var(--secondaryLight-1);
+}
